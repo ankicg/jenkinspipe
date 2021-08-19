@@ -39,7 +39,9 @@ pipeline {
                 // To run Maven on a Windows agent, use
                  bat "mvn -f Day1-BankApp\\pom.xml -Dmaven.test.failure.ignore=true clean package"
             }
+		stage('Buildd') {
 		env.PATH = env.PATH + ";c:\\Windows\\System32"
+		}
 
             post {
                 // If Maven was able to run the tests, even if some of the test
