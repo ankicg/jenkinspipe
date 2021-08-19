@@ -4,9 +4,7 @@ pipeline {
     tools {
         // Install the Maven version configured as "M3" and add it to the path.
         maven "MAVEN"
-	 environment{
-    CREATE = "call C:\\IBM\\InformationServer11_3\\Clients\\Classic\\dsadmin.exe"
-  }
+	
 	//env.PATH = env.PATH + ";C:\\Windows\\System32"
     }
 
